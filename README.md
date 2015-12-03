@@ -44,5 +44,3 @@ npm install
 webpack
 npm start
 ```
-
-*Zach's code... it just works* - Jacob Haug
