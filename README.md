@@ -30,7 +30,7 @@ This folder is your actual react components. Pretty simple!
 
 ###middleware
 
-We initialize middleware here inside of inside of `server.js` so that we can keep that simple.
+We initialize middleware here inside of inside of `server.js` so that we can keep that simple. Inside, there is an `api` folder. This handles how the initial state is passed down to your components.
 
 ##helpers
 

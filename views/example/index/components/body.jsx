@@ -5,8 +5,8 @@ import { addCount } from '../actions'
 const Example = ({count, dispatch}) => (
   <div>
     <h2>Testing!</h2>
-    <p>Count: {count}</p>
-    <button onClick={() => dispatch(addCount())}>Change it</button>
+    <p>Current Temp: {count}</p>
+    <button onClick={() => dispatch(addCount())}>Add 1</button>
   </div>
 )
 
@@ -16,4 +16,4 @@ function mapStateToProps(count) {
   }
 }
 
-export default connect(mapStateToProps)(Account)
+export default connect(mapStateToProps)(Example)

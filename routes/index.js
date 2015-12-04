@@ -10,12 +10,15 @@ export default (ctx, next) => {
       ctx.body = error.message
     }
     else if (renderProps) {
-      let html = renderToString(<RoutingContext {...renderProps} />)
-      ctx.body = renderPage(html, {name: 'test'})
+      let initialState = ctx.state.initialState
+      let html = renderToString(<RoutingContext {...renderProps} params={{initialState}} />)
+      ctx.body = renderPage(html, initialState)
+
     } else {
       ctx.response.status = 404
       ctx.body = 'Not Found'
     }
+
   })
 }
 
