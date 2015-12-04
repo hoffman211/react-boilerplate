@@ -2,7 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addCount } from '../actions'
 
-const Account = ({count, dispatch}) => (
+const Example = ({count, dispatch}) => (
   <div>
     <h2>Testing!</h2>
     <p>Count: {count}</p>

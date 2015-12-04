@@ -6,7 +6,7 @@ import Body from './components/body'
 import reducers from './reducers'
 const store = createStore(reducers)
 
-class Accounts extends React.Component{
+class Container extends React.Component{
   render(){
     return (
       <Provider store={store}>
