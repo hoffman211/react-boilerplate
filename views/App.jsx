@@ -3,6 +3,7 @@ import { render } from 'react-dom'
 import { match, Router } from 'react-router'
 import createBrowserHistory from 'history/lib/createBrowserHistory'
 import routes from '../routes/routes'
+import AsyncProps from 'async-props'
 /* globals document, window */
 
 
@@ -13,7 +14,11 @@ const location = `${pathname}${search}${hash}`
 // loading route/component code for the initial location
 match({ routes, location }, () => {
   render(
-    <Router routes={routes} history={createBrowserHistory()} />,
+    <Router
+      routes={routes}
+      history={createBrowserHistory()}
+      RoutingContext={AsyncProps}
+    />,
     document.getElementById('app')
   )
 })

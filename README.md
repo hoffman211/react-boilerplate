@@ -11,6 +11,8 @@ This application uses react-router to do dynamic routing, which is amazing. We a
 
 ##Folders
 
+**warning** waiting on [a PR](https://github.com/rackt/async-props/pull/7) for [async-props](https://github.com/rackt/async-props) that fixes a bug. For now, edit `async-props/lib/AsyncProps.js` line `143` and change it to: `propsArray: __ASYNC_PROPS__`
+
 ###routes
 
 `routes.jsx` this file contains all of your routes. You can import as many child routes as you want. Take a look at the `example` folder or the react router [huge app example](https://github.com/rackt/react-router/blob/master/examples/huge-apps/app.js) to see more advanced routing.
@@ -30,7 +32,7 @@ This folder is your actual react components. Pretty simple!
 
 ###middleware
 
-We initialize middleware here inside of inside of `server.js` so that we can keep that simple. Inside, there is an `api` folder. This handles how the initial state is passed down to your components.
+We initialize middleware here inside of inside of `server.js` so that we can keep that simple.
 
 ##helpers
 
